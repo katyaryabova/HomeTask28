@@ -1,5 +1,8 @@
 # count average group mark and students  with the mark <5
-f = open('txt3')
+# count average group mark and students  with the mark <5
+from HomeTask28 import Color
+
+f = open('txt new')
 suma = 0
 n = 0
 for i in f:
@@ -8,4 +11,4 @@ for i in f:
     n += 1
     if g < 5:
         print(i[:-1])
-print('Average mark: %.2f' % (suma / n))
+print(Color.Color.RED + 'Average mark: %.2f' % (suma / n) + Color.Color.END)
